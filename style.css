@@ -1,0 +1,437 @@
+/*
+Theme Name: Susie's Portfolio
+Theme URI: https://susiesites.com
+Author: Susie Butler
+Author URI: https://susiebutler.com
+Description: This is a child based on Understrap parent
+Version: 1.0.0
+Template: understrap
+Tags: one-column, two-column, sidebar, responsive, adaptable, menu-enabled, thumbnail-enabled
+*/
+/************************************************
+    General
+************************************************/
+body {
+    background-color: black !important;
+}
+
+select,
+input {
+    border-radius: 3px;
+    padding: 5px;
+}
+
+body,
+p,
+ul,
+li,
+.nav-link {
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: white !important;
+}
+
+.fg-caption-desc {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.fg-caption-title {
+    font-family: 'Pontano Sans', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif !important;
+    color: white;
+    text-align: center;
+    font-size: 3rem !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Pontano Sans', sans-serif !important;
+    color: white;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+#page-wrapper,
+#full-width-page-wrapper,
+#single-wrapper,
+#woocommerce-wrapper {
+    min-height: calc(100vh - 110px);
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+p.has-large-font-size {
+    color: white;
+}
+
+#content {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.container a {
+    color: skyblue;
+}
+
+.container a:hover,
+a.showcoupon,
+a.showlogin,
+[class^="woocommerce-form"] a {
+    color: #17a2b8;
+}
+
+a.showcoupon:hover,
+a.showlogin:hover,
+[class^="woocommerce-form"] a:hover {
+    color: skyblue;
+}
+
+a.btn {
+    color: white;
+}
+
+a.btn:hover {
+    color: white;
+}
+
+.btn-outline-primary,
+.wpcf7 input[type=submit],
+.btn-primary {
+    color: white !important;
+    border-color: #17a2b8 !important;
+    background: #17a2b8 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: unset !important;
+}
+
+.wpcf7 input[type=submit]:hover,
+.btn-primary:hover {
+    background: mediumaquamarine !important;
+}
+
+.btn-outline-primary:hover,
+input:hover,
+input:focus,
+textarea:focus {
+    box-shadow: unset !important;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+/************************************************
+    Navigation Menu
+************************************************/
+nav {
+    background: rgba(60, 179, 113, 1);
+    background: linear-gradient(45deg, rgba(135, 206, 235, 1) 0%, rgba(60, 179, 113, 1) 100%);
+    font-weight: 500;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.menu-item {
+    padding: 0.5em;
+}
+
+.menu-item:hover,
+.menu-item:active {
+    background: mediumaquamarine;
+}
+
+.dropdown-menu .menu-item:hover,
+.dropdown-menu .menu-item:active {
+    background: none;
+}
+
+.current-menu-item,
+.current-menu-item:hover {
+    background: skyblue;
+}
+
+#navbarNavDropdown .dropdown-menu {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(60, 179, 113, 1);
+}
+
+#navbarNavDropdown .dropdown-menu a {
+    font-weight: 500;
+    color: white;
+}
+
+#navbarNavDropdown .dropdown-menu a:hover {
+    background: mediumaquamarine;
+}
+
+.wp-block-image figcaption {
+    text-align: center;
+}
+
+/************************************************
+    Home Page
+************************************************/
+h2.title-heading {
+    font-family: 'Oswald', sans-serif !important;
+    color: white;
+    text-align: center;
+    font-size: 5em !important;
+}
+
+.sub-heading-1 {
+    color: skyblue;
+}
+
+.sub-heading-2 {
+    color: aquamarine;
+}
+
+.sub-heading-3 {
+    color: palegreen;
+}
+
+.my-photo {
+    margin-top: 30px;
+}
+
+.my-photo img {
+    width: 250px;
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+    .title-heading {
+        font-size: 4em;
+    }
+
+    .sub-heading {
+        font-size: 24px;
+    }
+
+    .my-photo img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 30em) {
+    .title-heading {
+        font-size: 3em;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+    }
+
+    .my-photo img {
+        width: 170px;
+    }
+}
+
+/************************************************
+    About Page
+************************************************/
+.about-photo img {
+    width: 100%;
+    max-width: 639px;
+    border: 3px white solid;
+}
+
+.orca-logo {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 5px 5px;
+}
+
+/************************************************
+    Sidebars
+************************************************/
+#header-sidebar .widget,
+#sidebar .widget {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: -30px;
+}
+
+/************************************************
+    Footer
+************************************************/
+#wrapper-footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    min-height: 40px;
+    background: rgba(60, 179, 113, 1);
+    font-weight: 500;
+}
+
+#wrapper-footer a {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/************************************************
+    WooCommerce General
+************************************************/
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+    background: none !important;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+    padding: 5px;
+    color: white;
+    background: none;
+}
+
+.woocommerce-info,
+.woocommerce-error li {
+    color: #515151 !important;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper ul.wc-tabs li.active {
+    background-color: rgba(60, 179, 113, 1) !important;
+    border-color: rgba(60, 179, 113, 1) !important;
+}
+
+.woocommerce-variation.single_variation>div.woocommerce-variation-price>span {
+    font-size: 2.25em;
+}
+
+.woocommerce ul.products li.product a img {
+    border: 3px white solid;
+}
+
+.woocommerce-pagination {
+    background: none;
+}
+
+.woocommerce .quantity .qty {
+    padding: 5px;
+}
+
+.product_meta {
+    display: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+    margin: 0px;
+}
+
+nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    color: black !important;
+}
+
+[class^="select2"] {
+    color: unset;
+    color: black !important;
+    overflow: show;
+}
+
+#add_payment_method #payment div.payment_box p:last-child,
+.woocommerce-cart #payment div.payment_box p:last-child,
+.woocommerce-checkout #payment div.payment_box p:last-child {
+    color: black !important;
+}
+
+.wc-stripe-elements-field,
+.wc-stripe-iban-element-field {
+    min-width: 230px;
+    margin-left: 5px;
+}
+
+#stripe-payment-data p {
+    color: black !important;
+}
+
+#add_payment_method #payment ul.payment_methods li input,
+.woocommerce-cart #payment ul.payment_methods li input,
+.woocommerce-checkout #payment ul.payment_methods li input {
+    margin: 0.5em 0.5em 0 0;
+}
+
+[name="coupon_code"] {
+    min-width: 130px;
+}
+
+img.stripe-icon {
+    display: inline !important;
+}
+
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2,
+.woocommerce-column.col-1 {
+    flex: unset;
+    max-width: unset;
+}
+
+/************************************************
+    WooCommerce: My Account
+************************************************/
+.woocommerce .list-group-item {
+    background-color: black;
+    border: 1px solid skyblue;
+}
+
+.woocommerce-form-login__rememberme {
+    margin-right: 10px;
+}
+
+.woocommerce-password-strength.bad,
+.woocommerce-password-strength.short {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.woocommerce-password-strength.good,
+.woocommerce-password-strength.strong {
+    background-color: green;
+    border-color: green;
+}
+
+.shop-search {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.shop-search input {
+    max-width: 210px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
